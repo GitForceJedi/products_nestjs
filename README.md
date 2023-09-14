@@ -26,50 +26,23 @@
 
 This is a simple API Project built using NestJS and MySQL. It represents a backend that can read & write to a Products database.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+The projecct is set up to automatically create the required tables in MySQL, upon starting the application.
 
-## Installation
+The application contains the ability to POST new products and retrieve those products.
 
 ```bash
 $ npm install
+$ npm start
 ```
 
-## Running the app
+Routes:
 
-```bash
-# development
-$ npm run start
+POST "/"
+{
+"title": "Product Title",
+"description": "the description",
+"price": "$999"
+}
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+GET "/"
+GET "/:id"
