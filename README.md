@@ -24,7 +24,7 @@
 
 ## Description
 
-This is a simple API Project built using NestJS and MySQL. It represents a backend that can read & write to a Products database.
+This is an API Project built using NestJS, TypeScript, and MySQL. It represents a backend that can read & write to a Products database.
 
 The project is set up to automatically create the required tables in MySQL, upon starting the application.
 
