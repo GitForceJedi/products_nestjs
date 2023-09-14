@@ -52,3 +52,7 @@ POST "/"
 GET "/"
 
 GET "/:id"
+
+\*If you would like to run this yourself, you will need to replace the following environment variables within the .env file DATABASE_NAME=yourDatabaseName
+DATABASE_USER=yourSQLUsername
+DATABASE_PASSWORD=yourSQLPassword
