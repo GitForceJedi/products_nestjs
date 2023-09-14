@@ -26,9 +26,13 @@
 
 This is a simple API Project built using NestJS and MySQL. It represents a backend that can read & write to a Products database.
 
-The projecct is set up to automatically create the required tables in MySQL, upon starting the application.
+The project is set up to automatically create the required tables in MySQL, upon starting the application.
 
 The application contains the ability to POST new products and retrieve those products.
+
+It is meant to showcase how TypeORM can be used and how it automatically creates the required table/s according to the products model established in the code.
+
+Above is further extended into API endpoints to show the interaction between the different endpoints and the database.
 
 ```bash
 $ npm install
@@ -38,6 +42,7 @@ $ npm start
 Routes:
 
 POST "/"
+
 {
 "title": "Product Title",
 "description": "the description",
@@ -45,4 +50,5 @@ POST "/"
 }
 
 GET "/"
+
 GET "/:id"
